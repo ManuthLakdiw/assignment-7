@@ -33,6 +33,12 @@ body{
     justify-content: flex-end;
 }
 
+#btn-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
 
 #middle-container div{
     margin-right: 20px;
@@ -44,6 +50,30 @@ body{
     border-radius: 5px;
     background-color: whitesmoke;
 }
+
+button{
+    padding: 15px 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+#btn-start{
+    background-color: green;
+}
+
+#btn-stop{
+    background-color: red;
+}
+
+button:hover{
+ cursor: pointer;
+}
+
+
 
 
 
