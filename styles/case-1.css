@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    background-color: #F2F2F2;
+  }
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .scene {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #DFF6FF;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  .scene img.sky,
+  .scene img.sun,
+  .scene img.moon,
+  .scene img.road,
+  .scene img.house,
+  .scene img.car {
+    position: absolute;
+    z-index: 0;
+  }
+  .sky {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+  .sun {
+    width: 80px;
+    top: 20px;
+    left: 30px;
+  }
+  .moon {
+    width: 60px;
+    top: 30px;
+    right: 30px;
+    display: none;
+  }
+  .road {
+    width: 50%;
+    bottom: 0;
+    height: 100px;
+  }
+  .left-road {
+    left: 0;
+  }
+  .right-road {
+    right: 0;
+  }
+  .house {
+    width: 200px;
+    bottom: 50px;
+    right: 20px;
+    z-index: 1;
+  }
+  .car {
+    width: 120px;
+    bottom: 50px;
+    left: 700px;
+    z-index: 2;
+    transition: transform 2s linear;
+  }
+  .queue {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    gap: 40px;
+    z-index: 3;
+  }
+  .man-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .man {
+    width: 60px;
+  }
+  .label {
+    font-weight: bold;
+    color: #00BCD4;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    transition: transform 1s linear;
+  }
+  .controls {
+    margin-top: 20px;
+  }
+
+
+  .controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+  }
+
+  #start{
+    background-color: green;
+  }
+
+
+  #stop{
+    background-color: orange;
+  }
+
+  .controls button:hover {
+    cursor: pointer;
+  }
